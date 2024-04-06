@@ -4,7 +4,7 @@ variable "RELEASE" {
 
 target "default" {
   dockerfile = "Dockerfile"
-  tags = ["runpod/tensorflow:${RELEASE}"]
+  tags = ["pepsighan/tensorflow:${RELEASE}"]
   contexts = {
     scripts = "../../container-template"
     proxy = "../../container-template/proxy"
